@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <children>
+      <Label fx:id="usernameLabel" alignment="CENTER" layoutX="67.0" layoutY="99.0" prefHeight="35.0" prefWidth="267.0" text="Username" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" alignment="CENTER" layoutX="112.0" layoutY="183.0" prefHeight="35.0" prefWidth="176.0" text="Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="126.0" layoutY="134.0" promptText="Username" />
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="40.0" layoutY="58.0" prefHeight="25.0" prefWidth="320.0" text="Welcome please login" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordPasswordField" layoutX="126.0" layoutY="218.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="126.0" layoutY="290.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #24a0ed;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="126.0" layoutY="342.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #24a0ed;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="73.0" layoutY="255.0" prefHeight="17.0" prefWidth="254.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="zoneIdLabel" alignment="CENTER" layoutX="26.0" layoutY="26.0" prefHeight="17.0" prefWidth="349.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+    <children>
+        <TableView fx:id="appointmentTableByMonth" layoutX="190.0" layoutY="30.0" prefHeight="110.0" prefWidth="744.0">
+            <columns>
+                <TableColumn fx:id="monthIdColumn" prefWidth="75.0" text="Appointment_ID" />
+                <TableColumn fx:id="monthCusNameColumn" prefWidth="72.0" text="Customer_ID" />
+                <TableColumn fx:id="monthTitleColumn" prefWidth="78.0" text="Title" />
+                <TableColumn fx:id="monthDescColumn" prefWidth="75.0" text="Description" />
+                <TableColumn fx:id="monthLocationColumn" prefWidth="75.0" text="Location" />
+                <TableColumn fx:id="monthTypeColumn" prefWidth="75.0" text="Type" />
+                <TableColumn fx:id="monthStartColumn" prefWidth="75.0" text="Start Time" />
+                <TableColumn fx:id="monthEndColumn" prefWidth="75.0" text="End Time" />
+                <TableColumn fx:id="monthContactColumn" prefWidth="75.0" text="Contact" />
+                <TableColumn fx:id="monthUserIdColumn" prefWidth="75.0" text="User_ID" />
+            </columns></TableView>
+      <TableView fx:id="appointmentTableByType" layoutX="190.0" layoutY="150.0" prefHeight="110.0" prefWidth="744.0">
+         <columns>
+            <TableColumn fx:id="typeIdColumn" prefWidth="75.0" text="Appointment_ID" />
+            <TableColumn fx:id="typeCusNameColumn" prefWidth="72.0" text="Customer_ID" />
+            <TableColumn fx:id="typeTitleColumn" prefWidth="78.0" text="Title" />
+            <TableColumn fx:id="typeDescColumn" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="typeLocationColumn" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="typeTypeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="typeStartColumn" prefWidth="75.0" text="Start Time" />
+            <TableColumn fx:id="typeEndColumn" prefWidth="75.0" text="End Time" />
+            <TableColumn fx:id="typeContactColumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="typeUserIdColumn" prefWidth="75.0" text="User_ID" />
+         </columns>
+      </TableView>
+      <TableView fx:id="appointmentTableByContact" layoutX="190.0" layoutY="270.0" prefHeight="110.0" prefWidth="744.0">
+         <columns>
+            <TableColumn fx:id="contactIdColumn" prefWidth="75.0" text="Appointment_ID" />
+            <TableColumn fx:id="contactCusNameColumn" prefWidth="72.0" text="Customer_ID" />
+            <TableColumn fx:id="contactTitleColumn" prefWidth="78.0" text="Title" />
+            <TableColumn fx:id="contactDescColumn" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="contactLocationColumn" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="contactTypeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="contactStartColumn" prefWidth="75.0" text="Start Time" />
+            <TableColumn fx:id="contactEndColumn" prefWidth="75.0" text="End Time" />
+            <TableColumn fx:id="contactContactColumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="contactUserIdColumn" prefWidth="75.0" text="User_ID" />
+         </columns>
+      </TableView>
+      <TableView fx:id="appointmentTableByTitle" layoutX="190.0" layoutY="390.0" prefHeight="110.0" prefWidth="744.0">
+         <columns>
+            <TableColumn fx:id="TitleIdColumn" prefWidth="75.0" text="Appointment_ID" />
+            <TableColumn fx:id="TitleCusNameColumn" prefWidth="72.0" text="Customer_ID" />
+            <TableColumn fx:id="TitleTitleColumn" prefWidth="78.0" text="Title" />
+            <TableColumn fx:id="TitleDescColumn" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="TitleLocationColumn" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="TitleTypeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="TitleStartColumn" prefWidth="75.0" text="Start Time" />
+            <TableColumn fx:id="TitleEndColumn" prefWidth="75.0" text="End Time" />
+            <TableColumn fx:id="TitleContactColumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="TitleUserIdColumn" prefWidth="75.0" text="User_ID" />
+         </columns>
+      </TableView>
+      <Label layoutX="7.0" layoutY="30.0" text="Appointment by Month">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="270.0" text="Appointment by Contact">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="150.0" text="Appointment by Type">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="390.0" text="Appointment by Title">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="monthComboBox" layoutX="20.0" layoutY="55.0" onAction="#setAppointmentsByMonth" prefWidth="150.0" />
+      <ComboBox fx:id="typeComboBox" layoutX="20.0" layoutY="175.0" onAction="#setAppointmentsByType" prefWidth="150.0" />
+      <ComboBox fx:id="contactComboBox" layoutX="20.0" layoutY="295.0" onAction="#setAppointmentByContact" prefWidth="150.0" />
+      <ComboBox fx:id="TitleComboBox" layoutX="20.0" layoutY="415.0" onAction="#setAppointmentByTitle" prefWidth="150.0" />
+      <Button layoutX="852.0" layoutY="507.0" mnemonicParsing="false" onAction="#toMainScreen" text="Main Screen" />
+    </children>
+</AnchorPane>

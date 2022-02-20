@@ -1,0 +1,4 @@
+"Customer_ID";"Customer_Name";"Address";"Postal_Code";"Phone";"Create_Date";"Created_By";"Last_Update";"Last_Updated_By";"Division_ID"
+1;"Daddy Warbucks";"1919 Boardwalk";"01291";"869-908-1875";"2021-09-10 13:14:10";"script";"2021-09-10 17:14:10";"script";29
+2;"Lady McAnderson";"2 Wonder Way";"AF19B";"11-445-910-2135";"2021-09-10 13:14:10";"script";"2021-09-10 17:14:10";"script";103
+3;"Old man";"445 Old Rd";"84571";"955-771-2014";"2022-01-08 01:26:56";"test";"";"";49

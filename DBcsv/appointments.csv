@@ -1,0 +1,2 @@
+"Appointment_ID";"Title";"Description";"Location";"Type";"Start";"End";"Create_Date";"Created_By";"Last_Update";"Last_Updated_By";"Customer_ID";"User_ID";"Contact_ID"
+1;"Exam";"Basic exam for old man";"California";"Basic";"2022-01-14 15:00:00";"2022-01-14 16:00:00";"2022-01-13 06:14:38";"test";"";"";3;1;2
